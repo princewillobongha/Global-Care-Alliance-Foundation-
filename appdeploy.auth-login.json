@@ -1,0 +1,16 @@
+{
+  "methods": [
+    "email"
+  ],
+  "headline": "Foundation administrator sign-in",
+  "subtitle": "Secure access for authorized Global Care Alliance Foundation administration.",
+  "style": {
+    "mode": "light",
+    "accentColor": "#a17d3f",
+    "backgroundColor": "#f4f6f7",
+    "panelColor": "#ffffff",
+    "textColor": "#10263e",
+    "fontFamily": "DM Sans, sans-serif",
+    "borderRadius": 8
+  }
+}
