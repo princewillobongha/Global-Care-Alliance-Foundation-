@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Open public pages and navigate between separate routes",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "separate page navigation",
+      "about and mission pages",
+      "governance and transparency pages",
+      "responsive header navigation"
+    ],
+    "description": "Verifies the foundation's public information architecture opens distinct pages and remains navigable.",
+    "steps": [
+      "Open the homepage",
+      "Open About, Our Mission, Governance, and Transparency from the navigation",
+      "Open the Donate page and return Home"
+    ],
+    "expected": "Each menu item opens its own page content and the page begins at the top."
+  },
+  {
+    "name": "Submit donor interest without accepting money",
+    "viewport": "desktop",
+    "covers": [
+      "donor interest form",
+      "server-side validation",
+      "persistent donor enquiry record",
+      "no live payment processing"
+    ],
+    "description": "Verifies a visitor can register interest while the site clearly states that payment processing is not active.",
+    "steps": [
+      "Open Donate",
+      "Enter a valid name, email, interest, and message",
+      "Submit the form",
+      "Open the donation status notice"
+    ],
+    "expected": "The enquiry is saved and acknowledged as interest only; no payment is requested or processed."
+  },
+  {
+    "name": "Submit corporate partnership enquiry",
+    "viewport": "mobile",
+    "covers": [
+      "corporate partnership enquiry",
+      "organization field",
+      "persistent partnership enquiry record",
+      "mobile form usability"
+    ],
+    "description": "Verifies a company representative can submit a partnership enquiry from a mobile device.",
+    "steps": [
+      "Open Partnerships",
+      "Enter name, email, organization, collaboration type, and message",
+      "Submit the form"
+    ],
+    "expected": "A success acknowledgement appears and the enquiry is stored for authorized administrator review."
+  },
+  {
+    "name": "Restrict administration and review saved enquiries",
+    "viewport": "desktop",
+    "covers": [
+      "admin sign-in",
+      "admin email allowlist authorization",
+      "protected enquiry dashboard",
+      "admin donor and partnership records",
+      "sign-out"
+    ],
+    "description": "Verifies anonymous visitors cannot access private enquiries and the authorized administrator can review records.",
+    "steps": [
+      "Open the Administrator link while signed out",
+      "Attempt to access the overview without signing in",
+      "Sign in with the authorized administrator account",
+      "Review donor and partnership enquiry lists",
+      "Sign out"
+    ],
+    "expected": "Unauthenticated and non-allowlisted users are denied; the approved administrator sees stored enquiries and can sign out."
+  },
+  {
+    "name": "Protect patients and avoid unverified organizational claims",
+    "viewport": "mobile",
+    "covers": [
+      "patient applications remain closed",
+      "patient privacy warning",
+      "no fabricated leadership or registration claims",
+      "donation safety notice",
+      "no invented impact claims"
+    ],
+    "description": "Verifies patient and donor safeguards remain visible on mobile.",
+    "steps": [
+      "Open Patient Support",
+      "Review the closed-application and privacy notices",
+      "Open About and Governance",
+      "Open Donate"
+    ],
+    "expected": "The website does not request sensitive patient data, fabricate registration or leadership details, or accept funds through unverified channels."
+  }
+]
